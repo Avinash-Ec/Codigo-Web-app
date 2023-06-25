@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo/Contact</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="navigation">
+        <header>
+            <div class="icon">
+                <a href="index.html#content1"><img src="./images/logo.png" alt="">CDIOGO</a>
+            </div>
+            <div class="menu">
+                <a href="index.html#content1">
+                    <p>Home</p>
+                </a>
+                <a href="index.html#content2">
+                    <p>Services</p>
+                </a>
+                <a href="https://www.codigo.co/tech-for-hire">
+                    <p>Tech for Hire</p>
+                </a>
+                <a href="https://www.codigo.co/about">
+                    <p>About</p>
+                </a>
+                <a>
+                    <p>|</p>
+                </a>
+                <a href="./register.html">
+                    <p>Sign up</p>
+                </a>
+                <a href="./Login.html">
+                    <p>Log in</p>
+                </a>
+
+            </div>
+        </header>
+    </section>
+
+    <div class="topnav">
+        <div class="icon">
+            <a href="index.html#content1"><img src="./images/logo.png" alt="">CDIOGO</a>
+        </div>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html#content1">Home</a>
+            <a href="index.html#content2">Services</a>
+            <a href="https://www.codigo.co/tech-for-hire">Tech for Hire</a>
+            <a href="https://www.codigo.co/about">About</a>
+            <a href="#">--</a>
+            <a href="./register.html">Sign Up</a>
+            <a href="./Login.html">Log In</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+
+    <div id="form">
+        <form action="mailto:info@codido.com" method="post" enctype="text/plain">
+            <div class="contact-form">
+                <h2 align="center">Contact</h2>
+                <!-- <label for="name">Company name</label> -->
+                <input type="text" name="Need" class="gap" placeholder="*What do you need( Eg: Build an app)">
+                <input type="text"  id="Cost" class="gap" placeholder="*What's your estimate cost?">
+                
+                <label >How do we get in touch?</label>
+                <input type="text" name="Name" id="name" class="gap" placeholder="*Name">
+                <input type="text" name="Company-name" id="name" class="gap" placeholder="Company-Name">
+                <input type="email" name="Email" id="email" class="gap" placeholder="*Email">
+
+                <!-- <label for="phonenumber">Contact Number</label> -->
+                <input type="number" name="Contact-number" id="phonenumber" class="gap" placeholder="*Contact number">
+
+                <!-- <label for="textarea">Message</label> -->
+                <textarea name="Message" id="textarea" class="gap" placeholder="*Message"></textarea>
+                <button>Send</button>
+
+            </div>
+        </form>
+    </div>
+
+
+    <section id="contact">
+        <div>
+            <div id="contact-message">
+                <h1>Contact us</h1>
+                <p>Call or email us. We would love to hear from you.</p>
+            </div>
+            <div id="contact-m">
+                <div class="contact-section">
+                    <h1>Headquarters</h1>
+                    <p>
+                        24 Sin Ming Lane <br>Midview City #04-91 Singapore 573970
+                    </p>
+                </div>
+                <div class="contact-section">
+                    <h1>Phone:</h1>
+                    <p>65 6455 9790</p>
+                    <h1>Fax:</h1>
+                    <p>65 6455 9790</p>
+                    <h1>Email</h1>
+                    <a href="mailto: info@codido.com">info@codigo.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
